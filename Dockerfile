@@ -11,5 +11,3 @@ RUN apt-get update && apt-get install -y git curl gnupg \
   && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
   && apt-get update && apt-get install -y nodejs yarn \
   && rm -rf /var/lib/apt/lists/* \
-
-CMD ["bash"]
